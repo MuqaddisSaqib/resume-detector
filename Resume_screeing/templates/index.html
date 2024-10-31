@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">Face Swap</a></li>
+          <li><a href="#">Realistic Avatar</a></li>
+          <li><a href="#">Streaming Avatar</a></li>
+          <li><a href="#">Video Translate</a></li>
+          <li><a href="#">Talking Photo</a></li>
+          <li><a href="#">Image Generator</a></li>
+          <li><a href="#">Background Change</a></li>
+          <li><a href="#">Video Campaign</a></li>
+          <li><a href="#">Jarvis Moderator</a></li>
+          <li><a href="#">AI Support Agent</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Use Cases</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Creator Fund</a></li>
+          <li><a href="#">Webinar</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <a href="mailto:info@akool.com">info@akool.com</a>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h4>Join the Community</h4>
+      <ul>
+        <li><a href="https://www.youtube.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="24px">
+        </a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="24px">
+        </a></li>
+        <li><a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24px">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-divider"></div> <!-- Added a divider for aesthetic separation -->
+</footer>
+
+{% endblock %}
+

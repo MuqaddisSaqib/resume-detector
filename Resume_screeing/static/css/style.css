@@ -1,0 +1,207 @@
+:root {
+    --primary-bg-color: #0b2642;
+    --secondary-bg-color: #041c34;
+    --text-color: #ffffff;
+    --message-text-color: #ffcc00; /* New variable for message text color */
+    --hover-color: rgba(255, 255, 255, 0.1);
+    --dropdown-bg-color: #343a40;
+    --badge-bg-color: #ffffff;
+    --badge-text-color: #009fd4;
+    --button-bg-color: #009fd4;
+    --button-hover-color: #007aa3;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: var(--secondary-bg-color); /* Background color */
+    padding: 1rem; /* Padding around the navbar */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Bottom border */
+}
+
+.navbar-brand {
+    color: var(--text-color); /* Brand text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Font size for brand */
+}
+.message-text {
+    color: var(--message-text-color);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Aligns nav items to the right */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color); /* Link text color */
+    padding: 0.5rem 1rem; /* Padding around links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 5px; /* Slight rounding for links */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--hover-color); /* Hover background */
+    color: #ffffff; /* Hover text color */
+}
+
+
+.nunito-uniquifier {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.container-fluid {
+    width: 100%; /* Full width */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+}
+
+.main-content {
+    padding: 40px; /* Add padding for the main content */
+    background: var(--secondary-bg-color); /* Match the background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none; /* Hide the original file input */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #86989B; /* Customize the background color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Border radius */
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+button, input[type="submit"] {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    margin-top: 20px; /* Space above the button */
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.pulse-animation {
+    animation: pulse 5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+footer {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top */
+    max-width: 1200px; /* Or your desired max width */
+    margin: 0 auto; /* Centers the footer */
+    padding: 0 20px; /* Adds horizontal padding */
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust logo size */
+}
+
+.footer-links {
+    display: flex;
+    flex: 1; /* Takes up remaining space */
+}
+
+.footer-column {
+    margin-right: 40px; /* Space between columns */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px; /* Space below heading */
+    font-weight: bold; /* Make headings bold */
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-column ul li a:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+.footer-social {
+    margin-left: 20px; /* Space between social and links */
+}
+
+.footer-social ul {
+    display: flex; /* Make social icons flex */
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-right: 10px; /* Space between social icons */
+}
+
+.footer-divider {
+    height: 1px; /* Height of the divider */
+    background-color: rgba(255, 255, 255, 0.2); /* Light divider color */
+    margin-top: 20px; /* Space above divider */
+    width: 100%; /* Full width */
+}
+
