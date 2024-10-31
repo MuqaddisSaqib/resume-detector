@@ -1,9 +1,19 @@
 {
   "version": 2,
   "builds": [
-    { "src": "run.py", "use": "@vercel/python" }
+    {
+      "src": "run.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "run.py" }
-  ]
+    {
+      "src": "/(.*)",
+      "dest": "run.py"
+    }
+  ],
+  "env": {
+    "MY_ENV_VARIABLE": "value"  // Replace with your actual environment variables, if needed
+  }
 }
+
